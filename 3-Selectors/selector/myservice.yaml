@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myservice
+spec:
+  ports:
+  - port: 80             # This is the port the service will expose
+    targetPort: 80       # This is the port on the container the service will forward to
+  selector:
+    app: myapp
+    type: front-end
