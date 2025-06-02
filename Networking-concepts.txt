@@ -1,0 +1,7 @@
+Networking Concepts
+===================
+1. All contaners within POD can communicate with each other.
+2. All PODs can communicate with each other
+3. All Nodes can communicate with all PODs
+4. PODs are given an IP Address - [Epehemeral]
+5. services are giving a Persistant IP
