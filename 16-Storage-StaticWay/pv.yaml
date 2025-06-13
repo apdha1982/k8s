@@ -1,17 +1,16 @@
 apiVersion: v1
 kind: PersistentVolume
-metadata: 
+metadata:
   name: pv001
-  labels: 
+  labels:
     type: local
 spec:
   storageClassName: ssd
   capacity:
-    storage: 10Mi
+    storage: 10Mi  # 10 Mega Bytes
   volumeMode: Filesystem
   accessModes:
-   - ReadWriteOnce
-  persistentVolumeReclaimPloicy: Retain
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
   hostPath:
-    path: "/data/' 
-
+    path: "/data/"
